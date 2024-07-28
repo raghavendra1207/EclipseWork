@@ -1,0 +1,5 @@
+package com.entity;
+
+public class PrivateDeclartion {  
+	  private void message(){System.out.println("hello java"); }  
+	}  

@@ -1,0 +1,9 @@
+package com.entity;
+
+public class PrivateDeclaration {  
+		private int p=1;
+		
+		private int getName() {
+			return p;
+		}
+}

@@ -1,0 +1,6 @@
+
+public class ConstructorSettingAndGetting {
+	private String name;
+	Private int age;
+	Private String status;
+}

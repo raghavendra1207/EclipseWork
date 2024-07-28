@@ -1,0 +1,27 @@
+package demo;
+
+import java.lang.reflect.*;
+import com.entity.*;
+public class ReflectDemo {
+	public static void main(String[] args) throws NoSuchFieldException, SecurityException {
+		Field [] f1=PrivateDeclaration.class.getDeclaredFields(); 
+		for(Field n:f1) {
+			System.out.println(n.getName());
+			
+			
+	}
+		Field fieldobj=PrivateDeclaration.class.getDeclaredField("p");
+		fieldobj.setAccessible(true);
+		fieldobj.set("p",4);
+		
+					
+		
+		
+		
+		
+			
+			
+		
+	}
+
+}

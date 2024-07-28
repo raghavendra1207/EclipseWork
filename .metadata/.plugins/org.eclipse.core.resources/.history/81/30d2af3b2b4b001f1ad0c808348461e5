@@ -1,0 +1,27 @@
+package demo;
+
+import java.lang.reflect.*;
+import com.entity.*;
+public class ReflectDemo {
+	public static void main(String args[]) throws NoSuchFieldException, SecurityException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+		Class c=PrivateDeclaration.class;
+		Object obj=c.newInstance();
+		Method new1=PrivateDeclaration.class.getDeclaredMethod("setName");
+		// Field n2=PrivateDeclaration.class.getDeclaredField("p");
+		//Constructor[] newConst=PrivateDeclaration.class.getDeclaredConstructors();
+		
+		
+		new1.setAccessible(true);
+		new1.invoke("sare");
+		
+					
+		
+		
+		
+		
+			
+			
+		
+	}
+
+}

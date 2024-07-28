@@ -1,0 +1,26 @@
+package demo;
+
+import java.lang.reflect.*;
+import com.entity.*;
+public class ReflectDemo {
+	public static void main(String args[]) throws NoSuchFieldException, SecurityException {
+		Method new1=PrivateDeclaration.class.getDeclaredMethod("setName");
+		Field n2=PrivateDeclaration.class.getDeclaredField("p");
+		Constructor[] newConst=PrivateDeclaration.class.getDeclaredConstructors();
+		new1.setAccessible(true);
+		new1.invoke("sare");
+		
+					
+		
+		
+		for(Method n:new1) {
+			System.out.println(n);
+			
+		}
+		
+			System.out.println(n2);	
+			
+		
+	}
+
+}

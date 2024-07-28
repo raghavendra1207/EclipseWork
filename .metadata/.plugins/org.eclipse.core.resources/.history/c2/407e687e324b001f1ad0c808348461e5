@@ -1,0 +1,19 @@
+package demo;
+import java.time.LocalDate;
+public class DateAndTimeApiExecution {
+	
+	public static void main(String args[]) {
+		
+		//LocalDate
+		LocalDate ld=LocalDate.now();
+		System.out.println(ld.getDayOfWeek());
+		System.out.println(ld.getDayOfMonth());
+		System.out.println(ld.getMonth());
+		System.out.println(ld.getYear());
+	
+		
+		
+		
+	}
+
+}

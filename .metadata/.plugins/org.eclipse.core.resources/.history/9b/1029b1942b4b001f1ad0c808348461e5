@@ -1,0 +1,16 @@
+package com.entity;
+
+public class PrivateDeclaration {
+	
+	private String p;
+	private int n1;
+//	private PrivateDeclaration(String p,int n1) {
+//		this.p=p;
+//		this.n1=n1;
+//	}
+	private static void setName(String name) {
+		S
+		System.out.println("hello World");
+	}
+
+}

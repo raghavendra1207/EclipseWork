@@ -1,0 +1,26 @@
+package demo;
+
+import java.lang.reflect.*;
+import com.entity.*;
+public class ReflectDemo {
+	public static void main(String args[]) throws NoSuchFieldException, SecurityException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+		Class c=PrivateDeclaration.class;
+		
+		Method new1=PrivateDeclaration.class.getDeclaredMethod("setName");
+		
+		
+		
+		new1.setAccessible(true);
+		new1.invoke("sare");
+		
+					
+		
+		
+		
+		
+			
+			
+		
+	}
+
+}

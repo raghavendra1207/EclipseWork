@@ -1,0 +1,15 @@
+package demo;
+
+import java.lang.reflect.*;
+import com.entity.*;
+public class ReflectDemo {
+	public static void main(String args[]) {
+		Method[] new1=PrivateDeclaration.class.getDeclaredMethods();
+		for(Method n:new1) {
+			System.out.println(n);
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package demo;
+
+import java.lang.reflect.*;
+import com.entity.*;
+public class ReflectDemo {
+	public static void main(String args[]) throws NoSuchFieldException, SecurityException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, ClassNotFoundException {
+		 Class c = Class.forName("PrivateDeclaration");  
+		    Object o= c.newInstance();  
+		    Method m =c.getDeclaredMethod("message", null);  
+		    m.setAccessible(true);  
+		    m.invoke(o, null);  
+		
+					
+		
+		
+		
+		
+			
+			
+		
+	}
+
+}
